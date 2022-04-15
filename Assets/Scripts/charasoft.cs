@@ -19,6 +19,7 @@ public class charasoft : MonoBehaviour
     void Update()
     {
         CameraController.CameraX = this.transform.position.x;
+        CameraController.CameraY = this.transform.position.y;
 
 
         if (rb.velocity.magnitude > LimitSpeed)
