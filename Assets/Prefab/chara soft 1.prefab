@@ -1974,7 +1974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d10057d505c4b499fb7e6f3493b67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangePlayer1: {fileID: 6200687640436670789, guid: a032891fab7bccf458d4f41dc67c7886, type: 3}
+  ChangePlayer1: {fileID: 5291360816787181202, guid: 84c77c852f7f9ae4c8b74c203c20b56a, type: 3}
 --- !u!1 &5912528455815428706
 GameObject:
   m_ObjectHideFlags: 0

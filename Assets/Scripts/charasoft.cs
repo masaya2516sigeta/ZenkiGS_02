@@ -5,8 +5,8 @@ using UnityEngine;
 public class charasoft : MonoBehaviour
 {
     Rigidbody2D rb;
-    float speed = 7f;
-    float LimitSpeed = 12f;
+    float speed = 15f;
+    float LimitSpeed = 20f;
     public GameObject ChangePlayer1;
     bool JumpTrigger = false;
     // Start is called before the first frame update
