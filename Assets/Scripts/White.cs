@@ -28,7 +28,7 @@ public class White : MonoBehaviour
         }
         if(WhiteOn == true)
         {
-            z -= 0.01f;
+            z -= 0.05f;
             Sr.color = new Color(1, 1, 1, z);
             if (z <= 0)
             {
