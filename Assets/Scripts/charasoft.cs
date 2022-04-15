@@ -18,6 +18,9 @@ public class charasoft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CameraController.CameraX = this.transform.position.x;
+
+
         if (rb.velocity.magnitude > LimitSpeed)
         {
             rb.velocity = new Vector3(rb.velocity.x / 1.1f, rb.velocity.y);
