@@ -5,8 +5,8 @@ using UnityEngine;
 public class chara : MonoBehaviour
 {
     Rigidbody2D rb;
-    float speed = 5f;
-    float LimitSpeed = 10f;
+    float speed = 6f;
+    float LimitSpeed = 8f;
     public GameObject ChangePlayer2;
     bool JumpTrigger = false;
     // Use this for initialization
