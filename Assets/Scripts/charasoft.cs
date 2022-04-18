@@ -50,14 +50,14 @@ public class charasoft : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Stage")
+        if (collision.gameObject.tag == "Stage" || collision.gameObject.tag == "Jump")
         {
             JumpTrigger = false;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Stage")
+        if (collision.gameObject.tag == "Stage" || collision.gameObject.tag == "Jump")
         {
             JumpTrigger = false;
         }

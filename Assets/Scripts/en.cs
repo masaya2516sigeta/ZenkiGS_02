@@ -28,7 +28,7 @@ public class en : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Block")
+        if (collision.gameObject.tag == "Block"|| collision.gameObject.tag == "Jump")
         {
             WhiteCheck = false;
             Sr.color = new Color(255/255, 255/255, 255/255,0.5f);

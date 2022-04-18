@@ -51,7 +51,7 @@ public class chara : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Stage" || collision.gameObject.tag == "Block")
+        if (collision.gameObject.tag == "Stage" || collision.gameObject.tag == "Block"||collision.gameObject.tag == "Jump")
         {
             JumpTrigger = false;
         }
