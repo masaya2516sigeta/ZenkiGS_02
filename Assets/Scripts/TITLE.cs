@@ -16,6 +16,7 @@ public class TITLE : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return)&&U!=null)
         {
+            White.WhiteOn = true;
             Destroy(U);
             Instantiate(U2, U.transform.position, U.transform.rotation);
             Destroy(M);

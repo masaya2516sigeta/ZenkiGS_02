@@ -5,7 +5,7 @@ using UnityEngine;
 public class White : MonoBehaviour
 {
     SpriteRenderer Sr; //コンポーネント取得
-    bool WhiteOn = false;
+    public static bool WhiteOn = false;
     float z = 1;
     // Start is called before the first frame update
     void Start()
