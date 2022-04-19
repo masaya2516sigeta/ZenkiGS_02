@@ -21,6 +21,11 @@ public class charasoft : MonoBehaviour
         CameraController.CameraX = this.transform.position.x;
         CameraController.CameraY = this.transform.position.y;
 
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            rb.constraints = RigidbodyConstraints2D.None;
+        }
+
 
         if (rb.velocity.magnitude > LimitSpeed)
         {
