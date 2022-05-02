@@ -48,7 +48,7 @@ public class StageTitleController : MonoBehaviour
             if (z <= 0)
             {
                 TriggerOFF = false;
-                
+                Destroy(this.gameObject);
             }
         }
     }
