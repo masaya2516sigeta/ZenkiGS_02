@@ -5,6 +5,7 @@ using UnityEngine;
 public class TITLE : MonoBehaviour
 {
     public GameObject U,U2,M,M2,O,O2;
+    public static bool on = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,9 +15,11 @@ public class TITLE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return)&&U!=null)
+        if (Input.GetKeyDown(KeyCode.Return)&&U!=null&&on == true)
         {
+            print(on);
             White.WhiteOn = true;
+            on = false;
             Destroy(U);
             Instantiate(U2, U.transform.position, U.transform.rotation);
             Destroy(M);

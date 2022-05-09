@@ -24,7 +24,7 @@ public class GameMane : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(WX);
+        //print(WX);
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneCheck = true;
