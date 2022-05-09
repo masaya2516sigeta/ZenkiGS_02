@@ -17,7 +17,7 @@ public class TITLE : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return)&&U!=null&&on == true)
         {
-            print(on);
+            
             White.WhiteOn = true;
             on = false;
             Destroy(U);
