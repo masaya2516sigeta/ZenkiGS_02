@@ -9,6 +9,7 @@ TagManager:
   - SoftPlayer
   - Stage
   - Jump
+  - Check
   layers:
   - Default
   - TransparentFX

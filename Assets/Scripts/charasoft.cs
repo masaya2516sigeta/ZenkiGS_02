@@ -55,6 +55,13 @@ public class charasoft : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.tag == "Check")
+        {
+            GameMane.WX = collision.gameObject.transform.position.x;
+            GameMane.WY = collision.gameObject.transform.position.y;
+            GameMane.changeOn = true;
+            //GameMane.CheckPoint = collision.gameObject;
+        }
         if (collision.gameObject.tag == "Stage" || collision.gameObject.tag == "Jump")
         {
             JumpTrigger = false;

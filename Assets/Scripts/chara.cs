@@ -13,6 +13,18 @@ public class chara : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        if (GameMane.changeOn == true&& GameMane.SceneCheck == true)
+        {
+            GameMane.SceneCheck = false;
+            GameMane.changeOn = false;
+            GameObject obj = Instantiate(ChangePlayer2);
+            var pos = this.transform.position;
+            pos.x = GameMane.WX;
+            pos.y = GameMane.WY;
+            obj.transform.position = /*this.transform.position*/pos;
+            Destroy(this.gameObject,0.1f);
+
+        }
     }
 
     // Update is called once per frame
@@ -41,12 +53,14 @@ public class chara : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
+                
                 GameObject obj = Instantiate(ChangePlayer2);
                 obj.transform.position = this.transform.position;
                 Destroy(this.gameObject, 0.1f);
 
             }
         }
+        
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
