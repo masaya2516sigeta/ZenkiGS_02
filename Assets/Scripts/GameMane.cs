@@ -27,6 +27,7 @@ public class GameMane : MonoBehaviour
         //print(WX);
         if (Input.GetKeyDown(KeyCode.R))
         {
+            en.WhiteCheck = false;
             White.WhiteOn = true;
             SceneCheck = true;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name); // SceneÄ“Ç‚İ‚İ

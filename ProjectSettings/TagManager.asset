@@ -10,6 +10,7 @@ TagManager:
   - Stage
   - Jump
   - Check
+  - Stagechange1
   layers:
   - Default
   - TransparentFX

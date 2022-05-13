@@ -65,6 +65,12 @@ public class chara : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.tag == "Stagechange1")
+        {
+            CameraController.R = 73;
+            CameraController.G = 111;
+            CameraController.B = 70;
+        }
         if (collision.gameObject.tag == "Check")
         {
             GameMane.WX = collision.gameObject.transform.position.x;
