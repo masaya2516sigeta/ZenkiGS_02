@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
     public static float CameraX = 0, CameraY = 0;
     public static byte R=130, G=68, B=0;
-    Camera camera;
+    //Camera camera;
     // Start is called before the first frame update
     void Start()
     {

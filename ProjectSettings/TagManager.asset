@@ -12,6 +12,7 @@ TagManager:
   - Check
   - Stagechange1
   - Reset
+  - rocher
   layers:
   - Default
   - TransparentFX
@@ -37,7 +38,7 @@ TagManager:
   - Player
   - StopBlock
   - Warp
-  - 
+  - swich
   - 
   - 
   - 
