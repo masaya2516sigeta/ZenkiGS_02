@@ -10394,6 +10394,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9204016812246756445, guid: 3804022b6b1b0ce4391d47c6868fd14e, type: 3}
+      propertyPath: m_Layer
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 9204016812895121795, guid: 3804022b6b1b0ce4391d47c6868fd14e, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -10441,6 +10445,14 @@ PrefabInstance:
     - target: {fileID: 9204016812895121805, guid: 3804022b6b1b0ce4391d47c6868fd14e, type: 3}
       propertyPath: m_Name
       value: tuta1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204016812895121805, guid: 3804022b6b1b0ce4391d47c6868fd14e, type: 3}
+      propertyPath: m_Layer
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204016813527758577, guid: 3804022b6b1b0ce4391d47c6868fd14e, type: 3}
+      propertyPath: m_Layer
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3804022b6b1b0ce4391d47c6868fd14e, type: 3}
