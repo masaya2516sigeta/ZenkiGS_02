@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameMane : MonoBehaviour
 {
     public static float WX= -39.56694f, WY=10.6f;
-    public static bool changeOn = false;
+    public static bool changeOn = false,ResetON = false;
     public static bool SceneCheck = false;
     //public static GameObject CheckPoint;
     public GameObject chara;
@@ -25,8 +25,9 @@ public class GameMane : MonoBehaviour
     void Update()
     {
         //print(WX);
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R)||ResetON ==true)
         {
+            ResetON = false;
             en.WhiteCheck = false;
             White.WhiteOn = true;
             SceneCheck = true;

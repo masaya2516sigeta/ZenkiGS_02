@@ -65,7 +65,11 @@ public class chara : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Stagechange1")
+        if (collision.gameObject.tag == "Reset")
+        {
+            GameMane.ResetON = true;
+        }
+        if (collision.gameObject.tag == "Stagechange1")
         {
             CameraController.R = 73;
             CameraController.G = 111;

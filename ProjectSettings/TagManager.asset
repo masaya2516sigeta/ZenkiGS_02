@@ -11,6 +11,7 @@ TagManager:
   - Jump
   - Check
   - Stagechange1
+  - Reset
   layers:
   - Default
   - TransparentFX

@@ -69,6 +69,10 @@ public class charasoft : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if(collision.gameObject.tag == "Reset")
+        {
+            GameMane.ResetON = true;
+        }
         if (collision.gameObject.tag == "Stage" || collision.gameObject.tag == "Jump")
         {
             JumpTrigger = false;
