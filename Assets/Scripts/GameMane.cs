@@ -33,5 +33,14 @@ public class GameMane : MonoBehaviour
             SceneCheck = true;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Sceneçƒì«Ç›çûÇ›
         }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+    Application.Quit();
+#endif
+        }
     }
 }
