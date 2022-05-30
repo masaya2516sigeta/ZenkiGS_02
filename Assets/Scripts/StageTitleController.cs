@@ -11,9 +11,11 @@ public class StageTitleController : MonoBehaviour
     bool TimeTrigger = false;
     float Time = 0;
     float z = 0;
+    BoxCollider2D game;
     // Start is called before the first frame update
     void Start()
     {
+        game = this.gameObject.GetComponent<BoxCollider2D>();
         //text.GetComponent<Color>();
         text.color = new Color(1, 1, 1, 0);
     }
@@ -56,5 +58,6 @@ public class StageTitleController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         TriggerON = true;
+        game.enabled=false;
     }
 }
